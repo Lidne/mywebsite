@@ -1,5 +1,14 @@
+html {
+    background-image: linear-gradient(rgb(53, 52, 48) 10%, rgb(24, 24, 27) 90%);
+    /* background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
 body {
-    background-color: rgb(24, 24, 27);
+    padding-bottom: 1000px;
+    /* background-color: rgb(24, 24, 27); */
     margin: 0;
 }
 
@@ -80,7 +89,7 @@ body {
 
 .sidebar {
     background-color: rgb(34, 34, 37);
-    position: absolute;
+    position: fixed;
     width: 60px;
     right: 0;
     top: 0;
