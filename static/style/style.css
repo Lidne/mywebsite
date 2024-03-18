@@ -1,12 +1,13 @@
-html {
-    background-image: linear-gradient(rgb(53, 52, 48) 10%, rgb(24, 24, 27) 90%);
+/* html {
+    /* background-color: rgb(24, 24, 27); */
     /* background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed; */
-}
+    background-attachment: fixed;
+} */
 
 body {
+    background: linear-gradient(to bottom, rgb(53, 52, 48) 5%, rgb(24, 24, 27) 15%);
     padding-bottom: 1000px;
     /* background-color: rgb(24, 24, 27); */
     margin: 0;
@@ -29,7 +30,10 @@ body {
     text-shadow: 3px 3px 14px black;
     border-radius: 20px;
     border-color: goldenrod;
-    border-width: 2px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-right-width: 2px;
+    border-left-width: 2px;
     border-style: solid;
     padding-left: 14px;
     padding-right: 14px;
@@ -48,28 +52,45 @@ body {
 }
 
 .content-block {
-    background-color: rgb(56, 59, 63);
+    /* background-color: rgb(56, 59, 63); */
+    background: linear-gradient(to bottom, rgb(53, 52, 48) 5%, rgb(56, 59, 63) );
     color: white;
     border-radius: 10px;
     border-color: goldenrod;
-    border-width: 2px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-right-width: 2px;
+    border-left-width: 2px;
     border-style: solid;
     margin-bottom: 10px;
     margin-top: 10px;
     padding-top: 10px;
     padding-left: 12px;
-    padding-right: 5px;
+    padding-right: 10px;
     padding-bottom: 10px;
     display: grid;
 }
 
+
 .grid1 {
-    grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+.row1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 12px;
+}
+
+.row2 {
+
 }
 
 .gif {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100%;
     border-radius: 10px;
     border-style: dashed;
     border-width: 2px;
